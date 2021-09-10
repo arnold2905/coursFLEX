@@ -1,0 +1,80 @@
+/* style de la page 02 flex  */
+
+body {
+    background-color: rgb(25, 182, 235);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    min-height: 500px;  
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center;
+}
+
+.or {
+    background-color: rgb(245, 219, 75);
+}
+
+.argent {
+    background-color: rgb(228, 227, 233);
+}
+
+.vert {
+    background-color: rgb(200, 245, 75);
+
+}
+
+.rose {
+    background-color: rgb(230, 184, 184);
+}
+
+/* Flex  */
+
+.flex {
+    display: flex;
+    /* par défaut les enfants seront flex-direction: row; dans la rangée  */
+    /* row-reverse : on inverse l'ordre des éléments  */
+    /* column: de haut en bas ,  et, column-reverse: on inverse l'ordre dan sla colonne   */
+    flex-direction: row;
+    /* la propriété gap contrôle l'ecart entre des colonnes  */
+    gap: 40px;
+    column-gap: 40px;
+    flex-wrap: wrap;
+}
+
+.flex div {
+    /* padding: 5px; */
+    text-align: justify;
+}
+
+/* la seconde div flex-2 */
+
+.flex-2 {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    justify-content: space-evenly;
+    align-items: baseline;
+
+}
+
+.flex-2 div {
+    border: 1px solid green;
+}
+
+.h-25 {
+    height: 25px;
+}
+
+.h-50 {
+    height: 25px;
+}
+
+.h-75 {
+    height: 25px;
+}

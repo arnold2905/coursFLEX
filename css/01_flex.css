@@ -1,0 +1,68 @@
+/* style de la page 01 flex  */
+
+body {
+    background-color: lightblue;
+}
+
+main {
+    width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+h1 {
+    text-align: center; 
+}
+.or {
+    background-color: rgb(245, 219, 75);
+}
+
+.argent {
+    background-color: rgb(228, 227, 233);
+}
+
+.vert {
+    background-color: rgb(200, 245, 75);
+
+}
+
+.rose {
+    background-color: rgb(230, 184, 184);
+}
+
+/* Flex  */
+
+.flex {
+    /* 1/ le parent est display-flex */
+    background-color: orange;
+    margin: auto;
+    display: flex;
+    height: 800px;
+    width: 600px;
+    /* si on a flex-wrap ; la largeur des enfants est respectée ; le 4ieme élément va à la fin  */
+    /* flex-wrap: wrap; */
+
+    /* 5- si on utilise flex-wrap , wrap-reverse , le dernier élément qui ne rentre pa dans le parent passe en premier  */
+    /* flex-wrap: wrap-reverse; */
+
+    /* 6- comportement normal ou par défaut , on force l'alignement et le redimensionnement des éléments  */
+    /* flex-wrap: nowrap; */
+
+    /* la justification des éléments avec justify-content peut prendre différentes valeurs; flex-start par  défaut; flex-end à la fin ; center au centre ; space-between*/
+    /* justify-content: space-evenly; */
+
+    /* 8- autre propriété de la hauteur ; align-item , hauteur par défaut  */
+    align-items: stretch;
+
+}
+
+.flex div {
+    /* 2- toutes les div dans la div parente , ont une largeur bien définie  */
+    width: 100px;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.div {
+    
+}
