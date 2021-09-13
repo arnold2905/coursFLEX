@@ -1,45 +1,36 @@
-/* style pour la page 4 sur flex -  */
-*{
+/* une grille avec flex et en responsive  */
+
+* {
     box-sizing: border-box;
 }
+
 body {
-    background-color: yellow;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 1.1em;
-    /* text-align: justify; */
-}
-h1 {
-    background: url("../img/dolomites-italie.jpg") no-repeat;
-
-    background-position: center;
-    background-size: cover;
-    height: 250px;
-    line-height: 250px;
-    text-align: center;
-    width: 80%;
-    color: lightskyblue;
-}
-
-.transparent {
     background-color: white;
-    opacity: 0.8;
-    border-radius: 5px;
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1.1em;
+    text-align: justify;
+    color: #333;
 }
+
+main {
+    width: 800px;
+    margin: 0 auto;
+}
+
+
+
+/* color pour identifier */
 
 .bleu-leger {
-    background-color: lightblue;
+    background-color: lightskyblue;
 }
 
-.jaune-leger {
-    background-color: lightyellow;
+.vert-leger {
+    background-color: lime;
 }
+
 .gris-leger {
-    background-color: lightgray;
-}
-.conteneur{
-    width:100%;
-    background-color: #fff;
- 
+    background-color: lightgrey;
 }
 
 /* la classe pour créer une rangée  */
@@ -54,13 +45,6 @@ h1 {
 
     border: 1px solid palevioletred;
 }
-
-/* la classe pour mettre les éléments les uns en dessous des autres */
-.column {
-    display: flex;
-    flex-direction: column;
-}
-
 
 /* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
 .col-1 {
@@ -158,9 +142,4 @@ h1 {
 }
 .marge-11 {
     margin-left: 91.666666%;
-}
-
-footer {
-    height: 200px;
-    background-color: #333;
 }
