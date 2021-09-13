@@ -1,39 +1,29 @@
 /* une grille avec flex et en responsive  */
 
-* {
+*{
     box-sizing: border-box;
 }
 
 body {
-    background-color: white;
-    font-family: 'Roboto' , sans-serif;
-    font-size: 1.1em;
-    text-align: justify;
-    color: #333;
+    background-color: lemonchiffon;
+
+}
+.rose-leger {
+    background-color: lightpink;
 }
 
+.jaune-leger {
+    background-color: lightyellow;
+}
+.saumon {
+    background-color: lightsalmon;
+}
 main {
-    width: 800px;
+    width:1000px;
     margin: 0 auto;
+
+    /* background-color: linen; */
 }
-
-
-
-/* color pour identifier */
-
-.bleu-leger {
-    background-color: lightskyblue;
-}
-
-.vert-leger {
-    background-color: lime;
-}
-
-.gris-leger {
-    background-color: lightgrey;
-}
-
-/* la classe pour créer une rangée  */
 
 .row {
     display: flex;
@@ -43,9 +33,8 @@ main {
     row-gap: 5px;
     margin-bottom: 5px;
 
-    border: 1px solid palevioletred;
-}
 
+}
 /* la grille sur 12 colonnes, et la définition de la largeur des colonnes */
 .col-1 {
     /* cette valeur est la largeur en % d'une colonne si je veux la largeur de 2 colonnes je fais la largeur d'une colonne X 2 */
@@ -94,21 +83,18 @@ main {
     padding: 5px;
 }
 
-.col-10 {
-    width: 83.333333%;
+.col-10{
+    width:83.333333%;
     padding: 5px;
 }
-
-.col-11 {
-    width: 91.666666%;
+.col-11{
+    width:91.666666%;
     padding: 5px;
 }
-
 .col-12 {
     width: 100%;
     padding: 5px;    
 }
-
 /* les marges à gauche pour créer si on le veut des colonnes vides */
 .marge-1 {
     margin-left: 8.333333%;
@@ -142,4 +128,71 @@ main {
 }
 .marge-11 {
     margin-left: 91.666666%;
+}
+
+.img-fluide {
+    width: 100%;
+}
+
+/* les règles de médias queries pour le responsive et les différents écrans  */
+
+/* pour les téléphones/smartphones */
+@media (max-width: 320px){
+
+    .column-xs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-xs-12 {
+        width: 100%;
+    }
+    .marge-xs {
+        margin: 0;
+    }
+
+    body {
+        background-color: #fff;
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+}
+/* fin pour les téléphones */
+
+/* pour les petites tablettes et smartphones grands écrans */
+@media (min-width:321px) and (max-width:767px){
+    body {
+        background-color: pink;
+    }
+    main {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+     }
+
+     .column-reverse {
+         display: flex;
+         flex-direction: column-reverse;
+     }
+}
+
+/* pour les tablettes et certains ordinateurs portables  */
+@media (min-width:768px) and (max-width:1096px){
+    body {
+        background-color: palevioletred;
+
+    }
+    main {
+        background-color: #fff;
+    }
+}
+
+/* pour les ordinateurs de bureau, les écrans plus grands que 1097px */
+@media (min-width:1097px){
+    body {
+        background-color:thistle;
+    }
 }

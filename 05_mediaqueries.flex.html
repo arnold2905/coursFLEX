@@ -4,85 +4,78 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cours flex - flex 05</title>
+    <title>Premier site responsive</title>
     <link rel="stylesheet" href="css/05_mediaqueries.flex.css">
-    <script src="https://kit.fontawesome.com/30d9cb2bf3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    
-    <div class="row bleu-leger">
-        <header class="col-3">
-            <h1><a href="05_mediaqueries.flex.html"></a>Site Responsive</h1>
-        </header>
-        
-        <nav class="marge-6 col-3">
-            <div>
-                <a href="#">Menu 1</a>
-                <a href="#">Menu 2</a>
-                <a href="#">Menu 3</a>
-                <a href="#">Menu 4</a>
-            </div>
-        </nav>
-    </div>
+<div id="en-tete" class="row rose-leger">
+    <!-- en-tête -->
+            <header class="col-xs-12 col-3">
+                <h1><a href="05_mediaqueries.flex.html">/Site Responsive</a></h1>
+            </header>
+            <nav class=" col-xs-12 marge-xs marge-6 col-3">
+                <div>
+                    <a href="#">Menu 1</a>
+                    <a href="#">Menu 2</a>
+                    <a href="#">Menu 3</a>
+                    <a href="#">Menu 4</a>
+                </div>
+            </nav>
+</div>
+<!-- fin en-tête  -->
+        <main>
+            <!-- section 1 -->
+            <section class=" column-xs row">
+                <div class=" col-xs-12 col-6">
+                    <h2> rangée 1 titre 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit quaerat cumque ipsam fuga, delectus animi placeat, ab molestiae expedita atque consectetur et adipisci vero nemo alias rem eaque. Optio, molestias!</p>
+                </div>
+                <div class=" col-xs-12 col-6">
+                    <h3>titre 2</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, repudiandae. Magnam illum consequatur voluptate, vero maxime, sint quae ducimus repudiandae totam odit voluptas esse possimus temporibus, dicta dolor aliquam doloribus?</p>
+                </div>
+            </section>
+   <!-- fin section 1 -->
 
-    <!-- fin en-tête -->
+   <!-- section 2 -->
+            <section class=" column-xs row">
+                <div class=" col-xs-12 col-4">
+                    <h2>rangée 2 titre  2</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus suscipit beatae, praesentium, culpa tempore labore, optio placeat esse aspernatur omnis sit ipsum maiores nemo quos veritatis enim dignissimos rem iusto.</p>
+                </div>
+                <div class="col-xs-12 col-4">
+                    <h2>titre 2</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum et consequatur libero nemo alias reiciendis rerum, quam cum nam non quod repellat officia, deserunt, veritatis dolores! Non blanditiis doloribus tempora.</p>
+                </div>
+                <div class="col-xs-12 col-4">
+                    <h3>titre 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ipsam incidunt sit aliquam doloribus nostrum, voluptate velit quam nobis enim quidem nam animi modi perferendis, atque provident quod rem itaque!</p>
+                </div>
+            </section>
+      <!-- fin section 2 -->
 
-    <main>
+      <section class="column-reverse row rose-leger">
+          <div class="col-8">
+            <img src="img/dolomites-italie.jpg" alt="dolomites-italie" class="img-fluide">
+          </div>
+          <div class="col-4 rose-leger">
+                <h2>Les dolomites en Italie</h2>
+                <p>blablabla visitez les Dolomites</p>
+          </div>
+      </section>
+        </main>
 
-        <!-- 1ere section  -->
-        <section class="row">
-
-            <div class="col-6">
-                <h2>//// rangée 1 Titre 2</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum eveniet eos ipsam veritatis! Unde quam id, vitae dolores corrupti, deleniti at neque eos quisquam officiis eaque delectus quis explicabo tempore.</p>
-            </div>
-
-            <div class="col-6">
-                <h2>Titre 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo, quam? Libero blanditiis, consectetur iure vero aut aperiam neque, dolorum exercitationem illo est et quos. Aut vitae pariatur fugit porro voluptas.</p>
-            </div>
-
-        </section>
-
-        <!-- 2ième section  -->
-        <section class="row">
-
-            <div class="col-4">
-                <h2>//// rangée 2Titre 2</h2>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum perspiciatis eum quisquam ex</p>
-            </div>
-            <div class="col-4">
-                <h2>Titre 2</h2>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum perspiciatis eum quisquam ex</p>
-            </div>
-            <div class="col-4">
-                <h3>Titre 2</h3>
-                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum perspiciatis eum quisquam ex</p>
-            </div>
-        </section>
-
-        
-    </main>
-
-    <footer class="row gris-leger">
-        <div class="col-4 bleu-leger">
-            <p>1</p>
-        </div>
-        <div class="col-4">
-            <p>2</p>
-        </div>
-
-        <div class="col-4 vert-leger">
-            <p>3</p>
-            <ul>
-                <li><a href="#">menu 1</a></li>
-                <li><a href="#">menu 2</a></li>
-                <li><a href="#">menu 3</a></li>
-                <li><a href="#">menu 4</a></li>
-            </ul>
-        </div>
-    </footer>
-
-
+  <footer class="column-xs row jaune-leger">
+<div class=" col-xs-12 col-4 saumon"><p>1</p></div>
+<div class="col-xs-12 col-4"><p>2</p></div>
+<div class=" col-xs-12 col-4 rose-leger"><p>3</p>
+    <ul>
+        <li><a href="#">menu 1</a></li>
+        <li><a href="#">menu 2</a></li>
+        <li><a href="#">menu 3</a></li>
+        <li><a href="#">menu 4</a></li>
+    </ul>
+</div>
+  </footer>
 </body>
 </html>
