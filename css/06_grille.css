@@ -1,0 +1,42 @@
+/* Grille Flex 6  */
+
+body {
+    background-color: lightyellow;
+}
+
+
+/* couleur pour identification  */
+
+.bleu {
+    background-color: lightskyblue;
+}
+
+.vert {
+    background-color: lightgreen;
+}
+
+.gris {
+    background-color: lightgrey;
+}
+
+section {
+    /* les sections sont display flex */
+    display: flex;
+    flex-direction: row;
+    max-width: 1000px;
+    margin: auto;
+    background-color: #fff;
+}
+
+.colonne {
+    margin: 10px;
+    border: 1px dotted #000;
+    /* flex-grow et flex-shrink : nous voulons que nos colonnes se comportent de la même façon lorsqu'elles s'agrandissent ou se rapetissent */
+    /* on donne la valeur 1 qui indique à flex-box comment augmenter cette taille si nécessaire */
+    flex-grow: 1;
+    /* flex-shrink indique à flex-box comment réduire cette taille si necessaire  */
+    flex-shrink: 1;
+    flex-basis: 0;
+    /* grow shrink basis : proprétés raccourcies */
+    /* flex: 1 1 0; */
+}
