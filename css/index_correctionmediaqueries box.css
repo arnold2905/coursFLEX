@@ -1,4 +1,4 @@
-/* style pour index correction boxe  */
+/* style pour index correction mediaqueries boxe  */
 
 * {
     box-sizing: border-box;
@@ -231,4 +231,69 @@ footer hr {
 #reseaux a {
     display: inline-block;
     margin: 0 50px;
+}
+
+/* les styles pour media queries */
+
+@media screen and (max-width: 576px) {
+
+    body {
+        background-color: #fff;
+    }
+
+    header > div {
+        flex-direction: column;
+        align-items: center;
+        /* flex-wrap: wrap; */
+        gap: 2rem;
+    }
+
+    header figure {
+        width: 80%;
+        text-align: center;
+    }
+
+    header figure+div {
+        width: 80%;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    header nav {
+        justify-content: space-between;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    main article {
+        width: 60%;
+    }
+
+    footer figure {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 1200px) {
+
+    header > div {
+        background-color: pink;
+    }
+}
+
+/* des styles en cas d'impression de la page  */
+@media print {
+    body {
+        background-color: #fff;
+    }
+
+    footer {
+        background-color: #eee;
+    }
+
+    main img {
+        opacity: 0.4;
+    }
 }
