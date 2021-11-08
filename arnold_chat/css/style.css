@@ -1,0 +1,16 @@
+/* Page style pour "Adopte un chat " */
+
+
+body {
+    font-family: 'Merienda',cursive
+}
+
+footer {
+    background-color: #061339;
+}
+
+header {
+    width: 100%;
+    height: 200px;
+    background-image: url(../img/background.jpg);
+}
